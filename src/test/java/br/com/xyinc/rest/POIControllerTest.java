@@ -41,7 +41,7 @@ public class POIControllerTest extends AbstractRestTest {
     
     
     @Test
-    public void shouldReturnAllEvaluations_WithoutProblem()
+    public void shouldReturnAllPOIs_WithoutProblem()
         throws Exception {
 
         poiService.save( createPoi() );
@@ -55,7 +55,7 @@ public class POIControllerTest extends AbstractRestTest {
     
     
     @Test
-    public void shouldCreateEvaluation_WithoutProblem() throws Exception {
+    public void shouldCreatePOI_WithoutProblem() throws Exception {
         
         POI poi = createPoi();
 

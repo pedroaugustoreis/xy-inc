@@ -10,7 +10,7 @@ Esse script criará a base de dados e realizará os inserts de alguns POIs inici
 
 Com a base de dados criada, executar o seguinte comando para rodar os testes automáticos:
 
-	mvn clean install
+	mvn clean test
 
 Para construir e realizar deploy da aplicação executar o seguinte comando:
 
