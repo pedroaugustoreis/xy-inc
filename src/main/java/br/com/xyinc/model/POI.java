@@ -41,6 +41,19 @@ public class POI implements Serializable {
     @Column( name = "CREATED_AT", nullable = false )
     @JsonIgnore
     private ZonedDateTime createdAt = ZonedDateTime.now();
+    
+    
+    public POI() {
+        
+    }
+    
+    
+    public POI( String name, Long positionX, Long positionY ) {
+        
+        this.name = name;
+        this.positionX = positionX;
+        this.positionY = positionY;
+    }
 
 
     public Long getId() {
