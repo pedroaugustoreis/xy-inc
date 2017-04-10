@@ -19,7 +19,7 @@ public interface POIRepository extends JpaRepository< POI, Long > {
     
     @Query( "SELECT p FROM POI p WHERE ((p.positionX >= :positionX - :distance AND p.positionX <= :positionX + :distance) AND "
             + "(p.positionY >= :positionY - :distance AND p.positionY <= :positionY + :distance))" )
-    List< POI > findPossiblePOIsByReferenceAndDistance( @Param( "positionX" ) Long positionX,
+    List< POI > findByReferenceAndDistance( @Param( "positionX" ) Long positionX,
             @Param( "positionY" ) Long positionY,
             @Param( "distance" ) Long distance );
 

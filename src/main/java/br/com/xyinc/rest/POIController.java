@@ -50,7 +50,7 @@ public class POIController {
         List< POIView > poiViewList = new ArrayList<>();
 
         poiList.forEach( poi -> {
-            poiViewList.add( POIView.POItoPOIView( poi ) );
+            poiViewList.add( new POIView( poi ) );
         } );
 
         return poiViewList;
@@ -66,7 +66,7 @@ public class POIController {
         List< POIView > poiViewList = new ArrayList<>();
 
         poiList.forEach( poi -> {
-            poiViewList.add( POIView.POItoPOIView( poi ) );
+            poiViewList.add( new POIView( poi ) );
         } );
 
         return poiViewList;

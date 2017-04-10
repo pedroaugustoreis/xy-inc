@@ -102,7 +102,7 @@ public class POIServiceImpl implements POIService {
 
         validateSearchForReferenceParams( positionX, positionY, distance );
 
-        List< POI > poiList = repository.findPossiblePOIsByReferenceAndDistance( positionX, positionY, distance );
+        List< POI > poiList = repository.findByReferenceAndDistance( positionX, positionY, distance );
 
         if ( poiList == null || poiList.isEmpty() ) {
             throw new POINotFoundException(

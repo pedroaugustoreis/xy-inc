@@ -17,14 +17,12 @@ public class POIView {
     private Long positionY;
 
 
-    public static POIView POItoPOIView( POI poi ) {
+    public POIView( POI poi ) {
 
-        POIView poiView = new POIView();
-        poiView.setName( poi.getName() );
-        poiView.setPositionX( poi.getPositionX() );
-        poiView.setPositionY( poi.getPositionY() );
+        name = poi.getName();
+        positionX = poi.getPositionX();
+        positionY = poi.getPositionY();
         
-        return poiView;
     }
 
 
