@@ -31,5 +31,6 @@ serviço para listagem de todos os POIs a uma certa distância de um ponto de re
 	http://localhost:8080/api/poi/findByReferenceAndDistance?positionX=55&positionY=60&distance=10
 
 commit 1
+commit 2
 
 
