@@ -30,4 +30,6 @@ serviço para criação de um novo POI (HTTP POST):
 serviço para listagem de todos os POIs a uma certa distância de um ponto de referência (HTTP GET)
 	http://localhost:8080/api/poi/findByReferenceAndDistance?positionX=55&positionY=60&distance=10
 
+commit 1
+
 
